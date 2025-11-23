@@ -55,7 +55,7 @@ int main() {
     cin >> shift;
 
     //Open input file
-    ifstream in_file("/Users/jacobsamblanet/Documents/National University/CSC242/Week 4/SamblanetJacobAssignment05/SamblanetJacobAssignment05_Part2/input.txt");
+    ifstream in_file("input.txt");
     if (!in_file) {
         cout << "Error opening input.txt\n";
         return 1;
@@ -82,7 +82,7 @@ int main() {
     }
 
     // Write result to output file
-    ofstream out_file("/Users/jacobsamblanet/Documents/National University/CSC242/Week 4/SamblanetJacobAssignment05/SamblanetJacobAssignment05_Part2/output.txt");
+    ofstream out_file("output.txt");
     if (!out_file) {
         cout << "Error opening output.txt\n";
         return 1;
