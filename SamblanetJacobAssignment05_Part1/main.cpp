@@ -20,7 +20,7 @@ using namespace std;
 
 int main() {
     // Open the dictionary file
-    ifstream dictionaryFile("/Users/jacobsamblanet/Documents/National University/CSC242/Week 4/SamblanetJacobAssignment05/SamblanetJacobAssignment05_Part1/words");
+    ifstream dictionaryFile("words");
     if (dictionaryFile.fail()) {
         cout << "Error opening words file" << endl;
         return -1;
@@ -35,7 +35,7 @@ int main() {
     dictionaryFile.close();
 
     // Open the file containing words to check
-    ifstream checkFile("/Users/jacobsamblanet/Documents/National University/CSC242/Week 4/SamblanetJacobAssignment05/SamblanetJacobAssignment05_Part1/input");
+    ifstream checkFile("input");
     if (checkFile.fail()) {
         cout << "Error opening check file" << endl;
         return -1;
